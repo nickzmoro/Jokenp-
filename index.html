@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>Jokenpô</h1>
+
+            <div class="buttons">
+                <button id="rock" onclick="determinateWinner('rock')">&#x1F44A;</button>
+                <button id="paper" onclick="determinateWinner('paper')">&#x1f590;</button>
+                <button id="scissors" onclick="determinateWinner('scissors')">&#x270c;</button>
+            </div>
+
+            <p id="result"></p>
+
+            <p>Sua pontuação: <span class="my-point">0</span></p>
+            <p>Pontuação do adversário: <span class="your-point">0</span></p>
+
+            <button class="end-game" onclick="endGame()">Finalizar jogo</button>
+            <button class="reset" onclick="reset()">Resetar</button>
+        </div>
+    </main>
+
+    <div class="container-end">
+        <div class="container-txt">
+            <h2>Jokenpô finalizado!</h2>
+
+            <p>Placar:</p>
+            <h3 class="showScoreboard"></h3>
+
+            <p>Resultado:</p>
+            <h3 class="showResult"></h3>
+
+        </div>
+        <div class="socials-back">
+            <div class="back">
+                <button id="return-game" onclick="returningGame()">Voltar a jogar</button>
+            </div>
+            <div class="socials">
+                <a href="https://github.com/nickzmoro" target="_blank"><img width="35" height="35" src="https://img.icons8.com/ios-glyphs/50/github.png" alt="github"/></a>
+                <a href="https://www.linkedin.com/in/devnicolas/" target="_blank"><img width="35" height="35" src="https://img.icons8.com/ios-glyphs/50/linkedin.png" alt="linkedin"/></a>
+                <a href="https://nicolasmororuiz@gmail.com"><img width="35" height="35" src="https://img.icons8.com/material-rounded/50/new-post.png" alt="new-post"/></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mask"></div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
